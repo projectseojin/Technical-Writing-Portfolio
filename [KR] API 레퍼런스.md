@@ -32,8 +32,8 @@
 |↳`detected_count`|Integer|검출된 총 객체의 수|`2`|
 |↳`objects`|List|검출된 객체 정보 리스트| |
 |↳↳`label`|String|검출된 객체의 명칭|`"person"`|
-|↳↳`confidence`|Double|검출 결과 신뢰도, 기준점(0.0): 좌측 상단 모서리|`0.92`|
-|↳↳`bounding_box`|Object|객체를 둘러싼 경계 상자의 위치 정보| |
+|↳↳`confidence`|Double|검출 결과 신뢰도|`0.92`|
+|↳↳`bounding_box`|Object|객체를 둘러싼 경계 상자의 위치 정보, 기준점(0.0): 좌측 상단 모서리| |
 |↳↳↳`x`|Integer|박스의 좌측 상단 X 좌표값(단위:px)|`120`|
 |↳↳↳`y`|Integer|박스의 좌측 상단 Y 좌표값(단위:px)|`85`|
 |↳↳↳`width`|Integer|박스의 가로 길이(단위:px)|`50`|
