@@ -1,8 +1,10 @@
+## 📂 Project Title
+**[EN] Study Cafe Kiosk Software Requirements Specifications**
 
+## 💼 Context
+This is an SRS sample created for a hypothetical software for study cafe kiosks, written in Markdown.
 
-# [EN] SRS - Study Cafe Kiosk Software Requirements Specifications
-
-This is an SRS for a study cafe kiosk.
+---------
 
 ## 1. Introduction
 
