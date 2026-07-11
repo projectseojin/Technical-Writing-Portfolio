@@ -23,6 +23,24 @@ Request must include a token in its header or body, and the transmitted data mus
 |↳↳ `confidence_threshold`|Double|Y| Required minimum confidence score (ex. input `0.75` -> only return results with a minimum of 75% confidence) |
 |↳↳ `target_objects`|List|Y|A list of targeted objects for detection (ex.`["person", "car", "bicycle"]`) |
 
+## Request Example
+```
+curl --request POST \
+  --url https://api.yourdomain.com/v1/object-detection \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "access_token": "eyJhbGciOiJIUzI1NiIsIn...",
+    "request_data": {
+      "image_format": "jpg",
+      "base64_source": "/9j/4AAQSkZJRgABAQEASABIAAD/2wBD...",
+      "options": {
+        "confidence_threshold": 0.75,
+        "target_objects": ["person", "car"]
+      }
+    }
+  }'
+```
+
 ## Response
 
 ### 1. Success Response
