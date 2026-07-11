@@ -21,6 +21,24 @@
 |↳↳ `confidence_threshold`|Double|Y| 검출 신뢰도 하한선 예) `0.75`지정 시 75% 이상만 반환|
 |↳↳ `target_objects`|List|Y|탐지할 사물 목록 제한 예) `["person", "car", "bicycle"]`|
 
+## 요청 예시 (Request Example)
+````
+curl --request POST \
+  --url https://api.yourdomain.com/v1/object-detection \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "access_token": "eyJhbGciOiJIUzI1NiIsIn...",
+    "request_data": {
+      "image_format": "jpg",
+      "base64_source": "/9j/4AAQSkZJRgABAQEASABIAAD/2wBD...",
+      "options": {
+        "confidence_threshold": 0.75,
+        "target_objects": ["person", "car"]
+      }
+    }
+  }'
+````
+
 ## 응답 데이터 (Response)
 
 ### 1. 성공 시 (Success Response)
